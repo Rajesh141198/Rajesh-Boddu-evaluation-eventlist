@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button class="add-button" id="show-form-btn">Add New Event</button>
+
+  <form class="event-form">
+    <input type="text" id="input-event-name" placeholder="Event Name" />
+    <input type="date" id="input-event-start" />
+    <input type="date" id="input-event-end" />
+    <button type="submit" class="btn-submit">Save</button>
+    <button type="delete" class="btn-submit">Delete</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="event-table-body"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
